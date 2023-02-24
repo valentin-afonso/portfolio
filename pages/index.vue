@@ -1,3 +1,7 @@
 <template>
-    <p>Page 1</p>
+    <h1>Home page</h1>
 </template>
+
+
+<script setup>
+</script>
