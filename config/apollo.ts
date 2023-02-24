@@ -10,7 +10,7 @@ export default defineApolloClient({
     headers: {
         'Content-Type': 'application/json',
         Accept: 'application/json',
-        'X-Include-Drafts': `${!isProd}`
+       ...(!isProd && {'X-Include-Drafts': 'true'}) 
     }
   },
   websocketsOnly: false,
