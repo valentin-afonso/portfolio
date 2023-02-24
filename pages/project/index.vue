@@ -1,5 +1,5 @@
 <template>
-    <h1>Mes projets</h1>    
+    <h1>Mes projets test</h1>    
     <div v-if="postsPending">
         <p>Loading data</p>
     </div>
