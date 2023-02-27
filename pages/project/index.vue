@@ -1,26 +1,9 @@
 <template>
-    <h1>Mes projets test</h1>    
-    <div v-if="postsPending">
-        <p>Loading data</p>
-    </div>
-    <div v-else>
-        <div class="porjects___list">
-            <ProjectCard v-for="project in projectPost.allProjects" :key="project.id" :project="project" />
-        </div>
+    <div>
+        <h1>Mes projets test</h1>    
+        <ProjectList/>
     </div>
 </template>
-
-
-<script setup>
-    import project_post from '@/cms/queries/project_post';
-
-    const { data: projectPost, pending: postsPending } = await useLazyAsyncQuery(project_post)
-   
-    if (projectPost.value?.post) {
-        console.log(projectPost)
-    }
-
-</script>
 
 <style scoped>
 p {

@@ -7,6 +7,12 @@
             <li>
                 <NuxtLink to="/project/">Mes projets</NuxtLink>  
             </li>
+            <li>
+                <NuxtLink to="/formation/">Formations</NuxtLink>  
+            </li>
+            <li>
+                <NuxtLink to="/experience/">Experience professionnel</NuxtLink>  
+            </li>
         </ul>  
     </nav>
 </template>
