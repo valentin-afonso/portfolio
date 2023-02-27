@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Mes projets test</h1>    
+        <h1>Mes projets</h1>    
         <ProjectList/>
     </div>
 </template>
