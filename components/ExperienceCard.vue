@@ -19,14 +19,6 @@ export default {
 </script>
 
 <style scoped>
-p {
-    margin: 0;
-}
-a {
-    color: black;
-    text-decoration: inherit;
-}
-
 .experience__info {
     padding: 1rem;
 }

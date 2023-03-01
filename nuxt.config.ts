@@ -7,6 +7,9 @@ export default defineNuxtConfig({
       '@pinia/nuxt',
       '@nuxtjs/apollo'
     ],
+    css: [
+      '@/assets/css/main.css'
+    ],
     runtimeConfig: {
       public: {
         isProd: process.env.NETLIFY_ENV === 'production',

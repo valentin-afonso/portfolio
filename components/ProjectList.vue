@@ -20,7 +20,10 @@
 
 <style scoped>
 .porjects___list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: min-content;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
 }
 </style>

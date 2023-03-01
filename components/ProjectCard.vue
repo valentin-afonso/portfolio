@@ -26,34 +26,10 @@ export default {
 </script>
 
 <style scoped>
-p {
-    margin: 0;
-}
-a {
-    color: black;
-    text-decoration: inherit;
-}
-ul {
-    padding: 0;
-}
-li {
-    list-style-type: none;
-}
-img {
-    max-width: 100%;
-}
-.porjects___list {
-    display: flex;
-    flex-wrap: wrap;
-}
-.porjects___list li {
-    width: 25%;
-}
-.porjects___list .project {
-    display: flex;
-    flex-direction: column;
-    margin: 0 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+.project {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 15px;
+    overflow: hidden;
 }
 .project__image img {
     height: 9rem;
@@ -75,6 +51,10 @@ img {
     display: flex;
     align-items: center;
     width: auto;
+    margin: 7px;
+}
+.list__techno li p {
+    font-size: .8rem;
 }
 .list__techno-image {
     widows: 2rem;

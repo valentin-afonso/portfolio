@@ -20,7 +20,10 @@
 
 <style scoped>
 .formations___list {
+    position: relative;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    border-left: 2px solid var(--primary-color);
 }
 </style>
