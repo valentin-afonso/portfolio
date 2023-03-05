@@ -9,8 +9,7 @@
                             
                 <ul class="list__techno">
                     <li v-for="(techno, key) in project.techno" :key="key">
-                        <img :src= "techno.icon.url" alt="icon techno" class="list__techno-image">
-                        <p class="list__techno-name">{{ techno.nom }}</p>
+                        <img :src= "techno.icon.url" :alt="techno.nom" class="list__techno-image">
                     </li>        
                 </ul>
             </div>
@@ -42,6 +41,8 @@ export default {
 .project__info-name {
     display: block;
     text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 .list__techno {
     display: flex;
@@ -60,11 +61,5 @@ export default {
     widows: 2rem;
     height: 2rem;
     margin-right: 10px;
-}
-.list__techno-name {
-    background-color: #4f4f4f;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 50px;
 }
 </style>

@@ -1,23 +1,17 @@
 <template>
     <nav class="navbar">
         <ul>
-            <li>
-                <NuxtLink to="/">Accueil</NuxtLink> 
-            </li>
-            <li>
-                <NuxtLink to="/project/">Mes projets</NuxtLink>  
-            </li>
-            <li>
-                <NuxtLink to="/formation/">Formations</NuxtLink>  
-            </li>
-            <li>
-                <NuxtLink to="/experience/">Experience professionnel</NuxtLink>  
+            <li v-for="link in headerData" :key="link.id">
+                <NuxtLink :to="link.lien.url">{{link.navigationLabel}}</NuxtLink> 
             </li>
         </ul>  
     </nav>
 </template>
 
 <script setup>
+import header_post from '@/cms/queries/header_post';
+const { data: headerPost, pending: postsPending } = await useAsyncQuery(header_post)
+const headerData = headerPost._rawValue.header.navigation
 </script>
 
 <style scoped>

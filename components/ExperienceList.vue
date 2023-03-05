@@ -21,6 +21,7 @@
 <style scoped>
 .experience___list {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 </style>
