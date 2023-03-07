@@ -4,3 +4,6 @@
         <ProjectList/>
     </div>
 </template>
+
+<script>
+</script>

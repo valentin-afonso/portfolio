@@ -5,7 +5,7 @@
         </div>
         <div v-else>
             <div class="formations___list">
-                <FormationCard v-for="formation in formationtData" :key="formation.id" :formation="formation" />
+                <FormationCard v-for="formation in formationData" :key="formation.id" :formation="formation" />
             </div>
         </div>
     </div>
@@ -13,9 +13,22 @@
 
 <script setup>
     import formation_post from '@/cms/queries/formation_post';
+    import { useFormationStore } from '@/stores/formation';
+    const store = useFormationStore();
+    let formationData;
+    let postsPending = false;
+    let fromStore = false;
 
-    const { data: formationPost, pending: postsPending } = await useAsyncQuery(formation_post)
-    const formationtData = formationPost._rawValue.allFormationPosts
+    if (store.formations.length === 0) {
+        const { data: formationPost, pending } = await useAsyncQuery(formation_post)
+        formationData = formationPost._rawValue.allFormationPosts
+        postsPending = pending;
+        store.setFormations(formationData);
+    } else {
+        formationData = store.getFormations;
+        fromStore = true;
+    }
+    console.log(fromStore)
 </script>
 
 <style scoped>

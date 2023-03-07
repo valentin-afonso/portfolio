@@ -13,9 +13,23 @@
 
 <script setup>
     import experience_post from '@/cms/queries/experience_post';
+    import { useExperienceStore } from '@/stores/experience';
 
-    const { data: experiencePost, pending: postsPending } = await useAsyncQuery(experience_post)
-    const experienceData = experiencePost._rawValue.allExperiencePosts
+    const store = useExperienceStore();
+    let experienceData;
+    let postsPending = false;
+    let fromStore = false;
+
+    if (store.experiences.length === 0) {
+        const { data: experiencePost, pending } = await useAsyncQuery(experience_post)
+        experienceData = experiencePost._rawValue.allExperiencePosts
+        postsPending = pending;
+        store.setExperiences(experienceData);
+    } else {
+        experienceData = store.getExperiences;
+        fromStore = true;
+    }
+    console.log(fromStore)
 </script>
 
 <style scoped>

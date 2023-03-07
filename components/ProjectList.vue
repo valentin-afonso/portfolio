@@ -13,9 +13,23 @@
 
 <script setup>
     import project_post from '@/cms/queries/project_post';
+    import { useProjectStore } from '@/stores/project';
 
-    const { data: projectPost, pending: postsPending } = await useAsyncQuery(project_post)
-    const projectData = projectPost._rawValue.allProjects
+    const store = useProjectStore();
+    let projectData;
+    let postsPending = false;
+    let fromStore = false;
+
+    if (store.projects.length === 0) {
+        const { data: projectPost, pending } = await useAsyncQuery(project_post)
+        projectData = projectPost._rawValue.allProjects
+        postsPending = pending;
+        store.setProjects(projectData);
+    } else {
+        projectData = store.getProjects;
+        fromStore = true;
+    }
+    console.log(fromStore)
 </script>
 
 <style scoped>

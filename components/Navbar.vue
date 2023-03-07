@@ -1,8 +1,8 @@
 <template>
     <nav class="navbar">
         <ul>
-            <li v-for="link in headerData" :key="link.id">
-                <NuxtLink :to="link.lien.url">{{link.navigationLabel}}</NuxtLink> 
+            <li v-for="page in headerData" :key="page.id">
+                <NuxtLink :to="page.lien.url">{{page.navigationLabel}}</NuxtLink> 
             </li>
         </ul>  
     </nav>
