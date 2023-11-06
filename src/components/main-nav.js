@@ -1,9 +1,10 @@
 import React from 'react'
 import Link from "next/link"
+import '@/styles/header/main-nav.scss'
 
 export function MainNav() {
   return (
-    <nav>
+    <nav className='mainmenu'>
       <ul>
         <li>
           <Link href="/projects">Projects</Link>

@@ -1,0 +1,11 @@
+.mainmenu {
+    ul {
+        display: flex;
+        li {
+            a {
+                padding: 1rem;
+                display: inline-block;
+            }
+        }
+    }
+}
