@@ -6,8 +6,10 @@ export const metadata = {
 
 export default function page() {
   return (
-    <div className='page_contact'>
+    <main className='page_contact'>
+      <div className='inside'>
         <h1>Contact</h1>
-    </div>
+      </div>
+    </main>
   )
 }

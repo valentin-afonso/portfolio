@@ -105,7 +105,8 @@ img {
 ul {
   list-style-type: none;
 }
-.layout {
+header > .inside,
+main > .inside {
   max-width: 1196px;
   margin: auto;
 }
