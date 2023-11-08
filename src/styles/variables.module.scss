@@ -1,0 +1,26 @@
+$layout-width: 1196px;
+$border-radius: 12px;
+$ignore-margin: calc((100vw - 100%)/2 * (-1));
+
+$color-yellow: #FFE9AF;
+$color-dark: black;
+$color-light: white;
+
+$color-code-blue: #89DDF3;
+$color-code-green: #C3E88D;
+$color-code-orange: #FFCB6B;
+$color-code-white: #E7F8F8;
+$color-code-red: #F07178;
+$bg-ide: #263238;
+
+$font-size-xxl: 2.5rem; /* h1 */
+$font-size-xl: 2.18rem; /* h2*/
+$font-size-l: 1.25rem; /*h3*/
+$font-size-m: 1rem; /*p*/
+$font-size-m: .87rem; /*span*/
+
+/*
+:export {
+  layoutWidth: $layout-width;
+}
+*/

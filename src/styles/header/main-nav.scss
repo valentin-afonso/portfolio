@@ -1,9 +1,23 @@
+@import "../variables.module.scss";
+
 .mainmenu {
     ul {
         display: flex;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 10rem;
+        padding: 10px 12px;
         li {
+            &.contact {
+                a {
+                    background-color: $color-dark;
+                    color: $color-light;
+                    border-radius: 10rem;
+                }
+            }
             a {
-                padding: 1rem;
+                display: inline-block;
+                color: $color-dark;
+                padding: 4px 19px;
                 display: inline-block;
             }
         }

@@ -1,0 +1,10 @@
+@mixin desktop() {
+    @media (max-width: 600px) {
+        @content;
+    }
+}
+@mixin darktheme() {
+    @media (prefers-color-scheme: dark) {
+        @content;
+    }
+}

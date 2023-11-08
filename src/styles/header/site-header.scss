@@ -1,7 +1,20 @@
 header {
+    padding: 30px 0;
     .inside {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        .content_left {
+            position: relative;
+            .logo {
+                fill: black;
+            }
+            .toogle_dark_mode {
+                position: absolute;
+                bottom: 5px;
+                left: 5px;
+            }
+        }
+
     }
 }
