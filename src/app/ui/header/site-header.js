@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from "next/link"
-import { MainNav } from "@/components/main-nav"
-import { Logo } from "@/components/svg/logo"
-import { ToggleDarkMode } from "@/components/toggle-dark-mode"
+import { MainNav } from "@/app/ui/header/main-nav"
+import { Logo } from "@/app/ui/logo"
+import { ToggleDarkMode } from "@/app/ui/toggle-dark-mode"
 import '@/styles/header/site-header.scss'
 
 export function SiteHeader() {
@@ -18,7 +18,6 @@ export function SiteHeader() {
           <MainNav />
           <div>FR</div>
       </div>
-
     </header>
   )
 }
