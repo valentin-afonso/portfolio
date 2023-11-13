@@ -1,5 +1,6 @@
 import { Inter } from 'next/font/google'
 import '@/styles/globals.scss'
+import ThemeProvider from '@/app/providers/theme-provider'
 import { SiteHeader } from "@/app/ui/header/site-header"
 
 const inter = Inter({ subsets: ['latin'] })
@@ -14,8 +15,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <div className="layout">
-          <SiteHeader />
-          {children}
+          <ThemeProvider>
+            <SiteHeader />
+            {children}
+          </ThemeProvider>
         </div>
       </body>
     </html>

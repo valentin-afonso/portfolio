@@ -7,6 +7,13 @@
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+
+    background-color: white;
+    color: black;
+    &.dark {
+      background-color: black;
+      color: white;
+    }
 }
 
 * {
@@ -48,4 +55,8 @@ main > .inside {
 }
 @include desktop() {
   /* som style... */
+}
+
+.toggle-button {
+  
 }
