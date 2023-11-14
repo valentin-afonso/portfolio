@@ -1,0 +1,37 @@
+{
+    "navigation": [
+        {   
+            "id": 1,
+            "libelle": {
+                "en": "Career",
+                "fr": "Activitée pro"
+            },
+            "link": "/"
+        },
+        {   
+            "id": 2,
+            "libelle": {
+                "en": "Projects",
+                "fr": "Projets"
+            },
+            "link": "/projects"
+        },
+        {   
+            "id": 3,
+            "libelle": {
+                "en": "School",
+                "fr": "Parcour scolaire"
+            },
+            "link": "/"
+        },
+        {   
+            "id": 4,
+            "libelle": {
+                "en": "Contact",
+                "fr": "Contact"
+            },
+            "link": "/contact"
+        }
+    ],
+    "title": "Portfolio from json data !"
+}

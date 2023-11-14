@@ -9,7 +9,7 @@ import { ToggleDarkMode } from "@/app/ui/toggle-dark-mode"
 import {useThemeContext} from '@/app/providers/theme-provider'
 import '@/styles/header/site-header.scss'
 
-export function SiteHeader() {
+export function SiteHeader(props) {
   const {isDarkMode} = useThemeContext()
   return (
     <header>
@@ -20,7 +20,9 @@ export function SiteHeader() {
               <ToggleDarkMode />
             </div>
           </Link>
-          <MainNav />
+          <MainNav 
+            navigation = {props.navigation}
+          />
           <div>FR</div>
       </div>
     </header>
