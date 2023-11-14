@@ -1,15 +1,9 @@
-'use client';
-
-import { useState } from 'react'
+import { useThemeContext } from '@/app/providers/theme-provider';
 import React from 'react'
 
 export function ToggleDarkMode() {
-  const [isDarkmode, setIsDarkMode] = useState(false);
+  const {isDarkmode, toggleTheme} = useThemeContext();
 
-  const toggleTheme = () => {
-    setIsDarkMode(!isDarkmode)
-    document.documentElement.classList.toggle('dark')
-  }
   return (
     <div className='toogle_dark_mode'>
       <button
@@ -23,8 +17,6 @@ export function ToggleDarkMode() {
           "light mode"
         )}
       </button>
-        <input type="checkbox" name="dark-mode"  value="dark-mode"  id="checkbox-dark-mode"/>
-        <label htmlFor="checkbox-dark-mode"></label>
     </div>
   )
 }

@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google'
 import { promises as fs } from 'fs';
 import '@/styles/globals.scss'
 import ThemeProvider from '@/app/providers/theme-provider'
+import LangProvider from '@/app/providers/lang-provider'
 import { SiteHeader } from "@/app/ui/header/site-header"
 
 const inter = Inter({ subsets: ['latin'] })
@@ -19,12 +20,14 @@ export default async function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <div className="layout">
+        <LangProvider>
           <ThemeProvider>
             <SiteHeader 
               navigation = {dataNavigation}
             />
             {children}
           </ThemeProvider>
+        </LangProvider>
         </div>
       </body>
     </html>
