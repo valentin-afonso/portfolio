@@ -12,7 +12,6 @@ import '@/styles/header/site-header.scss'
 
 export function SiteHeader(props) {
   const {isDarkmode} = useThemeContext()
-  console.log(isDarkmode)
   return (
     <header>
       <div className={`inside ${isDarkmode ? 'dark' : 'light'}`}>

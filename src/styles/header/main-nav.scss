@@ -12,6 +12,7 @@
                     background-color: $color-dark;
                     color: $color-light;
                     border-radius: 10rem;
+                    opacity: 1 !important;
                 }
             }
             a {
@@ -19,9 +20,13 @@
                 color: $color-dark;
                 padding: 4px 19px;
                 display: inline-block;
-                
+                opacity: .6;
+
                 &.active {
-                    color: red;
+                    opacity: 1;
+                }
+                &:hover {
+                    opacity: 1;
                 }
             }
         }

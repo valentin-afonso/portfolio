@@ -48,6 +48,11 @@ main > .inside {
   max-width: $layout-width;
   margin: auto;
 }
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
 @include darktheme()  {
   html {
     /* color-scheme: dark; */

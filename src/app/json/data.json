@@ -33,5 +33,169 @@
             "link": "/contact"
         }
     ],
-    "title": "Portfolio from json data !"
+    "bloc_slider": {
+        "title": "Portfolio from json data !",
+        "text_1": {
+            "en": "Hi, I'm Valentin,",
+            "fr": "Moi c'est valentin"
+        },
+        "text_2": {
+            "en": "Web developer",
+            "fr": "Développeur web"
+        },
+        "text_3": {
+            "en": "since",
+            "fr": "depuis"
+        },
+        "text_4": {
+            "en": "3 years",
+            "fr": "3 ans"
+        },
+        "text_5": {
+            "en": "Graduated",
+            "fr": "Diplomé d'un"
+        },
+        "text_6": {
+            "en": "master",
+            "fr": "master"
+        },
+        "text_7": {
+            "en": "in this domain",
+            "fr": "dans ce domaine"
+        },
+        "text_8": {
+            "en": "I love",
+            "fr": "passionné par"
+        },"text_9": {
+            "en": "UX/UI",
+            "fr": "l'UX/UI"
+        }
+    },
+    "bloc_pro": {
+        "title": {
+            "en": "Career",
+            "fr": "Mon parcour professionnelle"
+        },
+        "subtitle": {
+            "company": {
+                "en": "Since",
+                "fr": "Chez"
+            },
+            "post": {
+                "en": "Status",
+                "fr": "En tant que"
+            },
+            "location": {
+                "en": "In",
+                "fr": "A"
+            }
+        },
+        "careers": [
+            {
+                "id": 1,
+                "date": {
+                    "en": "Actually,",
+                    "fr":"Actuellement,"
+                },
+                "since": {
+                    "en": "since Sept 2022,",
+                    "fr": "depuis Sept 2022"
+                }, 
+                "company": {
+                    "name": "Upmotion",
+                    "website": "upmotion.fr"
+                },
+                "status": {
+                    "en": "Web developer",
+                    "fr":"Développeur web"
+                },
+                "location": "Les Herbiers",
+                "type_post": {
+                    "en": "CDI",
+                    "fr": "CDI"
+                }
+            },
+            {
+                "id": 2,
+                "date": {
+                    "en": "Oct 2022 - Sept 2023,",
+                    "fr":"Oct 2022 - Sept 2023,"
+                },
+                "company": {
+                    "name": "K.line",
+                    "website": "k-line.fr"
+                },
+                "status": {
+                    "en": "Web developer",
+                    "fr":"Développeur web"
+                },
+                "location": "Les Herbiers",
+                "type_post": {
+                    "en": "Alternance",
+                    "fr": "Alternance"
+                }
+            },
+            {
+                "id": 3,
+                "date": {
+                    "en": "Apr 2021 - Jun 2021,",
+                    "fr":"Avr 2021 - Juin 2021,"
+                },
+                "company": {
+                    "name": "Fleury Michon",
+                    "website": "fleury-michon.fr"
+                },
+                "status": {
+                    "en": "Web developer",
+                    "fr":"Développeur web"
+                },
+                "location": "Pouzauge",
+                "type_post": {
+                    "en": "Stage",
+                    "fr": "Stage"
+                }
+            },
+            {
+                "id": 4,
+                "date": {
+                    "en": "Apr 2020 - Jun 2020,",
+                    "fr":"Avr 2020 - Juin 2020,"
+                },
+                "company": {
+                    "name": "CIB",
+                    "website": "cib.fr"
+                },
+                "status": {
+                    "en": "Web developer",
+                    "fr":"Développeur web"
+                },
+                "location": "Développeur web",
+                "type_post": {
+                    "en": "Stage",
+                    "fr": "Stage"
+                }
+            }
+        ]
+    },
+    "bloc_skills": {
+        "title": {
+            "en": "My skills",
+            "fr": "Mes compétences"
+        },
+        "skills": [
+            {
+                "id": 1,
+                "name": "React",
+                "is_natif": false,
+                "is_cms": false,
+                "is_framework": true,
+                "is_liked": true,
+                "is_wish": false,
+                "is_other": false,
+                "level": 0.8,
+                "icon": ""
+            }
+        ]
+    }
+
 }
