@@ -78,7 +78,7 @@
         },
         "subtitle": {
             "company": {
-                "en": "Since",
+                "en": "In",
                 "fr": "Chez"
             },
             "post": {
@@ -196,6 +196,164 @@
                 "icon": ""
             }
         ]
+    },
+    "bloc_school": {
+        "title": {
+            "en": "School",
+            "fr": "Mon parcours scolaire"
+        },
+        "subtitle": {
+            "school": {
+                "en": "School",
+                "fr": "Ecole"
+            },
+            "location": {
+                "en": "In",
+                "fr": "A"
+            }
+        },
+        "schools": [
+            {
+                "id": 1,
+                "intitule": {
+                    "en": "Master web developement",
+                    "fr": "Master développement web"
+                },
+                "school":  "ECV Nantes",
+                "website": "ecv-nantes.fr",
+                "location": "Nantes",
+                "tags": [
+                    { 
+                        "id": 1,
+                        "text": "React"
+                    },
+                    { 
+                        "id": 2,
+                        "text": "UX/UI"
+                    },
+                    { 
+                        "id": 3,
+                        "text": "Symfony"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "intitule": {
+                    "en": "Licence Pro MiAR",
+                    "fr": "Licence Pro MiAR"
+                },
+                "school":  "IUT de Nantes",
+                "website": "iut-nantes.fr",
+                "location": "Nantes",
+                "tags": [
+                    { 
+                        "id": 1,
+                        "text": "Java"
+                    },
+                    { 
+                        "id": 2,
+                        "text": "Android Studio"
+                    },
+                    { 
+                        "id": 3,
+                        "text": "VueJs"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "intitule": {
+                    "en": "BTS SIO",
+                    "fr": "BTS SIO"
+                },
+                "school":  "ESUPEC",
+                "website": "esupec.fr",
+                "location": "Cholet",
+                "tags": [
+                    { 
+                        "id": 1,
+                        "text": "Java"
+                    },
+                    { 
+                        "id": 2,
+                        "text": "Symfony"
+                    },
+                    { 
+                        "id": 3,
+                        "text": "SQL"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "intitule": {
+                    "en": "Bac Scientifique",
+                    "fr": "Bac Scientifique"
+                },
+                "school":  "Jean XXIII",
+                "website": "jean-23.fr",
+                "location": "Les Herbiers",
+                "tags": [
+                    { 
+                        "id": 1,
+                        "text": "CSS/HTML"
+                    },
+                    { 
+                        "id": 2,
+                        "text": "Algo"
+                    }
+                ]
+            }
+        ]
+    },
+    "bloc_projects": {
+        "title": {
+            "en": "Projects",
+            "fr": "Mes projets"
+        },
+        "projects": [
+            {
+                "id": 1,
+                "is_teaser": true,
+                "name": "Netflix clone",
+                "desc": "",
+                "link_app": "",
+                "link_repo": "",
+                "tags": [
+                    { 
+                        "id": 1,
+                        "text": "react"
+                    },
+                    { 
+                        "id": 2,
+                        "text": "supabase"
+                    },
+                    { 
+                        "id": 2,
+                        "text": "api"
+                    }
+                ],
+                "img_teaser": ""
+            }
+        ]
+    },
+    "bloc_footer": {
+        "titles": {
+            "contact": {
+                "en": "Stay in contact ?",
+                "fr": "On reste en contact ?"
+            },
+            "doc": {
+                "en": "Documents",
+                "fr": "Documents"
+            }
+        },
+        "contents": {
+            "doc": {
+                "en": "Download my CV",
+                "fr": "Télécharger mon CV"
+            }
+        }
     }
-
 }
